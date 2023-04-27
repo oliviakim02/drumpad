@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Page</title>
+</head>
+<body>
+  <button onclick="playSound()">Play Sound</button>
+  <audio id="myAudio" src="path/to/mariojump.wav"></audio>
+  <script>
+    function playSound() {
+      const audio = document.getElementById("myAudio");
+      audio.play();
+    }
+  </script>
+</body>
+</html>
