@@ -8,6 +8,10 @@
   <h1>Choose your backtrack</h1>
   <button onclick="playSherbetLand()">Sherbet Land</button>
   <button onclick="playDKMountain()">DK Mountain</button>
+  <button onclick="playRainbowRoad()">Rainbow Road</button>
+  <button onclick="playPeachBeach()">Peach Beach</button>
+  <button onclick="playWaluigiStadium()">Waluigi Stadium</button>
+  <button onclick="playBowsersCastle()">Bowser's Castle</button>
   <br>
   <br>
   <br>
@@ -19,10 +23,17 @@
   <button onclick="playYoshi()">Yoshi</button>
   <button onclick="playHammer()">Mario Hammer</button>
   <button onclick="playStar()">Mario Star</button>
+  <button onclick="playPowerUp()">Power Up</button>
+  <button onclick="playCoin()">Mario Coin</button>
+  <button onclick="playBigMushroom()">Big Mushroom</button>
   
   
   <audio id="sherbetLand" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/20-sherbet-land-final-lap-.mp3"></audio>
   <audio id="DKMountain" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/21-dk-mountain-dino-dino-jungle.mp3"></audio>
+  <audio id="rainbowRoad" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/25-rainbow-road.mp3"></audio>
+  <audio id="peachBeach" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/09-peach-beach-daisy-cruiser.mp3"></audio>
+  <audio id="waluigiStadium" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/17-waluigi-stadium-wario-colosseum.mp3"></audio>
+  <audio id="bowsersCastle" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/23-bowser-s-castle.mp3"></audio>
   <audio id="marioJump" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_jump.wav"></audio>
   <audio id="marioPipe" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_pipe.wav"></audio>
   <audio id="marioShell" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_shell.wav"></audio>
@@ -30,6 +41,9 @@
   <audio id="yoshi" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_yoshi.wav"></audio>
   <audio id="hammer" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_hammer.wav"></audio>
   <audio id="star" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_starflower.wav"></audio>
+  <audio id="powerUp" src="https://www.superluigibros.com/downloads/sounds/NES/SMB3/wav/48.wav"></audio>
+  <audio id="coin" src="https://www.superluigibros.com/downloads/sounds/NES/SMB3/wav/54.wav"></audio>
+  <audio id="bigMushroom" src="https://www.superluigibros.com/downloads/sounds/NES/SMB3/wav/49.wav"></audio>
   
   <script>
     
@@ -41,6 +55,26 @@
     function playDKMountain() {
       const DKMountain = document.getElementById("DKMountain");
       DKMountain.play()
+    }
+    
+    function playRainbowRoad() {
+      const rainbowRoad = document.getElementById("rainbowRoad");
+      rainbowRoad.play();
+    }
+    
+    function playPeachBeach() {
+      const peachBeach = document.getElementById("peachBeach");
+      peachBeach.play();
+    }
+    
+    function playWaluigiStadium() {
+      const waluigiStadium = document.getElementById("waluigiStadium");
+      waluigiStadium.play();
+    }
+    
+    function playBowsersCastle() {
+      const bowsersCastle = document.getElementById("bowsersCastle");
+      bowsersCastle.play();
     }
     
     function playJump() {
@@ -76,6 +110,21 @@
     function playStar() {
       const star = document.getElementById("star");
       star.play();
+    }
+    
+    function playPowerUp() {
+      const powerUp = document.getElementById("powerUp");
+      powerUp.play();
+    }
+    
+    function playCoin() {
+      const coin = document.getElementById("coin");
+      coin.play();
+    }
+    
+    function playBigMushroom() {
+      const bigMushroom = document.getElementById("bigMushroom");
+      bigMushroom.play();
     }
     
   </script>
