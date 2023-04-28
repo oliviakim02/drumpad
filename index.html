@@ -2,25 +2,81 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My Page</title>
+  <title>Mario Drumpad</title>
 </head>
 <body>
+  <h1>Choose your backtrack</h1>
+  <button onclick="playSherbetLand()">Sherbet Land</button>
+  <button onclick="playDKMountain()">DK Mountain</button>
+  <br>
+  <br>
+  <br>
+  <h1>Add your effects</h1>
   <button onclick="playJump()">Mario Jump</button>
   <button onclick="playPipe()">Mario Pipe</button>
+  <button onclick="playShell()">Mario Shell</button>
+  <button onclick="playFireball()">Mario Fireball</button>
+  <button onclick="playYoshi()">Yoshi</button>
+  <button onclick="playHammer()">Mario Hammer</button>
+  <button onclick="playStar()">Mario Star</button>
   
+  
+  <audio id="sherbetLand" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/20-sherbet-land-final-lap-.mp3"></audio>
+  <audio id="DKMountain" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/21-dk-mountain-dino-dino-jungle.mp3"></audio>
   <audio id="marioJump" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_jump.wav"></audio>
   <audio id="marioPipe" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_pipe.wav"></audio>
+  <audio id="marioShell" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_shell.wav"></audio>
+  <audio id="marioFireball" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_fireball.wav"></audio>
+  <audio id="yoshi" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_yoshi.wav"></audio>
+  <audio id="hammer" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_hammer.wav"></audio>
+  <audio id="star" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_starflower.wav"></audio>
   
   <script>
+    
+    function playSherbetLand() {
+      const sherbetLand = document.getElementById("sherbetLand");
+      sherbetLand.play();
+    }
+    
+    function playDKMountain() {
+      const DKMountain = document.getElementById("DKMountain");
+      DKMountain.play()
+    }
+    
     function playJump() {
       const jump = document.getElementById("marioJump");
       jump.play();
+      
     }
     function playPipe() {
       const pipe = document.getElementById("marioPipe");
       pipe.play();
+      
     }
-    function play
+    function playShell() {
+      const shell = document.getElementById("marioShell");
+      shell.play ();
+    }
+    
+    function playFireball() {
+      const fireball = document.getElementById("marioFireball");
+      fireball.play();
+    }
+    
+    function playYoshi() {
+      const yoshi = document.getElementById("yoshi");
+      yoshi.play();
+    }
+    
+    function playHammer() {
+      const hammer = document.getElementById("hammer");
+      hammer.play();
+    }
+    
+    function playStar() {
+      const star = document.getElementById("star");
+      star.play();
+    }
     
   </script>
 </body>
