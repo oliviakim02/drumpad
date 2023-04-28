@@ -5,13 +5,23 @@
   <title>My Page</title>
 </head>
 <body>
-  <button onclick="playSound()">Play Sound</button>
-  <audio id="myAudio" src="path/to/mariojump.wav"></audio>
+  <button onclick="playJump()">Mario Jump</button>
+  <button onclick="playPipe()">Mario Pipe</button>
+  
+  <audio id="marioJump" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_jump.wav"></audio>
+  <audio id="marioPipe" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_pipe.wav"></audio>
+  
   <script>
-    function playSound() {
-      const audio = document.getElementById("myAudio");
-      audio.play();
+    function playJump() {
+      const jump = document.getElementById("marioJump");
+      jump.play();
     }
+    function playPipe() {
+      const pipe = document.getElementById("marioPipe");
+      pipe.play();
+    }
+    function play
+    
   </script>
 </body>
 </html>
