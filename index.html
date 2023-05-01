@@ -8,23 +8,23 @@
   
 <body>
   
-  <br>
-  <br>
-  <h1>Choose your backtrack</h1>
+  <h1>it's a'mario time!</h1>
+  <p>instructions: create your own mario sountrack ~ mix n match your backtrack and powerups to create a uniquely mario auditory experience. refresh the page to start over!</p>
+  <h2>choose your backtrack</h2>
   <div class="grid1">
-  <button class="button sherbetbutton centered" onclick="playSherbetLand()">Sherbet Land</button>
-  <button class="button centered dkbutton" onclick="playDKMountain()">DK Mountain</button>
-  <button class="button centered rainbowbutton" onclick="playRainbowRoad()">Rainbow Road</button>
-  <button class="button centered peachbutton" onclick="playPeachBeach()">Peach Beach</button>
-  <button class="button centered waluigibutton" onclick="playWaluigiStadium()">Waluigi Stadium</button>
-  <button class="button centered bowserbutton" onclick="playBowsersCastle()">Bowser's Castle</button>
+  <button class="button sherbetbutton centered" onclick="playSherbetLand()">sherbet land</button>
+  <button class="button centered dkbutton" onclick="playDKMountain()">DK mountain</button>
+  <button class="button centered rainbowbutton" onclick="playRainbowRoad()">rainbow road</button>
+  <button class="button centered peachbutton" onclick="playPeachBeach()">peach beach</button>
+  <button class="button centered waluigibutton" onclick="playWaluigiStadium()">waluigi stadium</button>
+  <button class="button centered bowserbutton" onclick="playBowsersCastle()">bowser's castle</button>
     </div>
   <br>
   <br>
   <br>
   <br>
   <br>
-  <h1>Add your effects</h1>
+  <h2>add your effects</h2>
   <div class="grid2">
   <button class="effectbutton jumpbutton centered" onclick="playJump()"></button>
   <button class="effectbutton pipebutton centered" onclick="playPipe()"></button>
@@ -60,6 +60,13 @@
   <audio id="bigMushroom" src="https://www.superluigibros.com/downloads/sounds/NES/SMB3/wav/49.wav"></audio>
   
   <style>
+    
+    body {
+  background-image: url('mario.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
     
     .grid1 {
       display: grid;
