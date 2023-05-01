@@ -11,28 +11,35 @@
   <br>
   <br>
   <h1>Choose your backtrack</h1>
-  <button class="button sherbetbutton" onclick="playSherbetLand()">Sherbet Land</button>
-  <button class="dkbutton" onclick="playDKMountain()">DK Mountain</button>
-  <button onclick="playRainbowRoad()">Rainbow Road</button>
-  <button onclick="playPeachBeach()">Peach Beach</button>
-  <button onclick="playWaluigiStadium()">Waluigi Stadium</button>
-  <button onclick="playBowsersCastle()">Bowser's Castle</button>
+  <div class="grid1">
+  <button class="button sherbetbutton centered" onclick="playSherbetLand()">Sherbet Land</button>
+  <button class="button centered dkbutton" onclick="playDKMountain()">DK Mountain</button>
+  <button class="button centered rainbowbutton" onclick="playRainbowRoad()">Rainbow Road</button>
+  <button class="button centered peachbutton" onclick="playPeachBeach()">Peach Beach</button>
+  <button class="button centered waluigibutton" onclick="playWaluigiStadium()">Waluigi Stadium</button>
+  <button class="button centered bowserbutton" onclick="playBowsersCastle()">Bowser's Castle</button>
+    </div>
   <br>
   <br>
   <br>
   <br>
   <br>
   <h1>Add your effects</h1>
-  <button onclick="playJump()">Mario Jump</button>
-  <button onclick="playPipe()">Mario Pipe</button>
-  <button onclick="playShell()">Mario Shell</button>
-  <button onclick="playFireball()">Mario Fireball</button>
-  <button onclick="playYoshi()">Yoshi</button>
-  <button onclick="playHammer()">Mario Hammer</button>
-  <button onclick="playStar()">Mario Star</button>
-  <button onclick="playPowerUp()">Power Up</button>
-  <button onclick="playCoin()">Mario Coin</button>
-  <button onclick="playBigMushroom()">Big Mushroom</button>
+  <div class="grid2">
+  <button class="effectbutton jumpbutton centered" onclick="playJump()"></button>
+  <button class="effectbutton pipebutton centered" onclick="playPipe()"></button>
+  <button class="effectbutton shellbutton centered" onclick="playShell()"></button>
+  <button class="effectbutton fireballbutton centered" onclick="playFireball()"></button>
+  <button class="effectbutton yoshibutton centered" onclick="playYoshi()"></button>
+  <button class="effectbutton hammerbutton centered" onclick="playHammer()"></button>
+  <button class="effectbutton starbutton centered" onclick="playStar()"></button>
+  <button class="effectbutton powerupbutton centered" onclick="playPowerUp()"></button>
+  <button class="effectbutton coinbutton centered" onclick="playCoin()"></button>
+  <button class="effectbutton bigmushroombutton centered" onclick="playBigMushroom()"></button>
+    </div>
+  <br>
+  <br>
+  <br>
   
   
   <audio id="sherbetLand" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/20-sherbet-land-final-lap-.mp3"></audio>
@@ -54,14 +61,40 @@
   
   <style>
     
+    .grid1 {
+      display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 30px; /* Gap between grid items */
+    }
+    
+    .grid2 {
+      display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Three columns with equal width */
+  grid-gap: 10px; /* Gap between grid items */
+    }
+    
+    .centered {
+  justify-self: center; /* center horizontally */
+  align-self: center; /* center vertically */
+}
+    
     .button {
       width: 150px;
-      height: 100px;
-      border-radius: 40%;
+      height: 150px;
+      border-radius: 20%;
       background-size: cover;
       background-position: center;
       font-size: 25px;
       color: white;
+      background-color: white;
+    }
+    
+    .effectbutton {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
     }
     
     .sherbetbutton {
@@ -69,7 +102,63 @@
     }
     
     .dkbutton {
-      width: 
+      background-image: url('dkmountain.png');
+    }
+    
+    .rainbowbutton {
+      background-image: url('rainbow.png');
+    }
+    
+    .peachbutton {
+      background-image: url('peach.png');
+    }
+    
+    .waluigibutton {
+      background-image: url('waluigi.png');
+    }
+    
+    .bowserbutton {
+      background-image: url('bowser.png');
+    }
+    
+    .jumpbutton {
+      background-image: url('mariojump.png');
+    }
+    
+    .pipebutton {
+      background-image: url('mariopipe.png');
+    }
+    
+    .shellbutton {
+      background-image: url('marioshell.png');
+    }
+    
+    .fireballbutton {
+      background-image: url('mariofireball.png');
+    }
+    
+    .yoshibutton {
+      background-image: url('yoshi.png')
+    }
+    
+    .hammerbutton {
+      background-image: url('mariohammer.png')
+    }
+    
+    .starbutton {
+      background-image: url('mariostar.png')
+    }
+    
+    .powerupbutton {
+      background-image: url('block.png')
+    }
+    
+    .coinbutton {
+      background-image: url('mariocoin.png')
+    }
+    
+    .bigmushroombutton {
+      background-image: url('bigmushroom.png')
     }
     
   </style>
