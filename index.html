@@ -1,63 +1,11 @@
 <!DOCTYPE html>
 <html>
 
+  /*reflection: */
+  
   <head>
     <meta charset="UTF-8">
     <title>Mario Drumpad</title>
-  </head>
-
-  <body>
-
-    <h1>it's a'mario time!</h1>
-    <p>instructions: create your own mario sountrack ~ mix n match your backtrack and powerups to create a uniquely mario auditory experience. refresh the page to start over!</p>
-    <h2>choose your backtrack</h2>
-    <div class="grid1">
-      <button class="button sherbetbutton centered" onclick="playSherbetLand()">sherbet land</button>
-      <button class="button centered dkbutton" onclick="playDKMountain()">DK mountain</button>
-      <button class="button centered rainbowbutton" onclick="playRainbowRoad()">rainbow road</button>
-      <button class="button centered peachbutton" onclick="playPeachBeach()">peach beach</button>
-      <button class="button centered waluigibutton" onclick="playWaluigiStadium()">waluigi stadium</button>
-      <button class="button centered bowserbutton" onclick="playBowsersCastle()">bowser's castle</button>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h2>add your effects</h2>
-    <div class="grid2">
-      <button class="effectbutton jumpbutton centered" onclick="playJump()"></button>
-      <button class="effectbutton pipebutton centered" onclick="playPipe()"></button>
-      <button class="effectbutton shellbutton centered" onclick="playShell()"></button>
-      <button class="effectbutton fireballbutton centered" onclick="playFireball()"></button>
-      <button class="effectbutton yoshibutton centered" onclick="playYoshi()"></button>
-      <button class="effectbutton hammerbutton centered" onclick="playHammer()"></button>
-      <button class="effectbutton starbutton centered" onclick="playStar()"></button>
-      <button class="effectbutton powerupbutton centered" onclick="playPowerUp()"></button>
-      <button class="effectbutton coinbutton centered" onclick="playCoin()"></button>
-      <button class="effectbutton bigmushroombutton centered" onclick="playBigMushroom()"></button>
-    </div>
-    <br>
-    <br>
-    <br>
-
-
-    <audio id="sherbetLand" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/20-sherbet-land-final-lap-.mp3"></audio>
-    <audio id="DKMountain" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/21-dk-mountain-dino-dino-jungle.mp3"></audio>
-    <audio id="rainbowRoad" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/25-rainbow-road.mp3"></audio>
-    <audio id="peachBeach" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/09-peach-beach-daisy-cruiser.mp3"></audio>
-    <audio id="waluigiStadium" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/17-waluigi-stadium-wario-colosseum.mp3"></audio>
-    <audio id="bowsersCastle" src="http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/23-bowser-s-castle.mp3"></audio>
-    <audio id="marioJump" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_jump.wav"></audio>
-    <audio id="marioPipe" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_pipe.wav"></audio>
-    <audio id="marioShell" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_shell.wav"></audio>
-    <audio id="marioFireball" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_fireball.wav"></audio>
-    <audio id="yoshi" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_yoshi.wav"></audio>
-    <audio id="hammer" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_hammer.wav"></audio>
-    <audio id="star" src="https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_starflower.wav"></audio>
-    <audio id="powerUp" src="https://www.superluigibros.com/downloads/sounds/NES/SMB3/wav/48.wav"></audio>
-    <audio id="coin" src="https://www.superluigibros.com/downloads/sounds/NES/SMB3/wav/54.wav"></audio>
-    <audio id="bigMushroom" src="https://www.superluigibros.com/downloads/sounds/NES/SMB3/wav/49.wav"></audio>
 
     <style>
       body {
@@ -171,91 +119,75 @@
         background-image: url('bigmushroom.png')
       }
     </style>
+  </head>
 
-    <script>
-      function playSherbetLand() {
-        const sherbetLand = document.getElementById("sherbetLand");
-        sherbetLand.play();
-      }
+  <body>
 
-      function playDKMountain() {
-        const DKMountain = document.getElementById("DKMountain");
-        DKMountain.play()
-      }
+    <h1>it's a'mario time!</h1>
+    <p>instructions: create your own mario sountrack ~ mix n match your backtrack and powerups to create a uniquely mario auditory experience. refresh the page to start over!</p>
+    <h2>choose your backtrack</h2>
+    <div class="grid1">
+      <button class="button sherbetbutton centered" onclick="play('sherbetLand')">sherbet land</button>
+      <button class="button centered dkbutton" onclick="play('DKMountain')">DK mountain</button>
+      <button class="button centered rainbowbutton" onclick="play('rainbowRoad')">rainbow road</button>
+      <button class="button centered peachbutton" onclick="play('peachBeach')">peach beach</button>
+      <button class="button centered waluigibutton" onclick="play('waluigiStadium')">waluigi stadium</button>
+      <button class="button centered bowserbutton" onclick="play('bowsersCastle')">bowser's castle</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>add your effects</h2>
+    <body>
 
-      function playRainbowRoad() {
-        const rainbowRoad = document.getElementById("rainbowRoad");
-        rainbowRoad.play();
-      }
 
-      function playPeachBeach() {
-        const peachBeach = document.getElementById("peachBeach");
-        peachBeach.play();
-      }
+      <div class="grid2">
+        <button class="effectbutton jumpbutton centered" onclick="play('jump')"></button>
+        <button class="effectbutton pipebutton centered" onclick="play('pipe')"></button>
+        <button class="effectbutton shellbutton centered" onclick="play('shell')"></button>
+        <button class="effectbutton fireballbutton centered" onclick="play('fireball')"></button>
+        <button class="effectbutton yoshibutton centered" onclick="play('yoshi')"></button>
+        <button class="effectbutton hammerbutton centered" onclick="play('hammer')"></button>
+        <button class="effectbutton starbutton centered" onclick="play('starflower')"></button>
+        <button class="effectbutton powerupbutton centered" onclick="play('box')"></button>
+        <button class="effectbutton coinbutton centered" onclick="play('coin')"></button>
+        <button class="effectbutton bigmushroombutton centered" onclick="play('mushroom')"></button>
+      </div>
 
-      function playWaluigiStadium() {
-        const waluigiStadium = document.getElementById("waluigiStadium");
-        waluigiStadium.play();
-      }
+      <br>
+      <br>
+      <br>
 
-      function playBowsersCastle() {
-        const bowsersCastle = document.getElementById("bowsersCastle");
-        bowsersCastle.play();
-      }
+      <script>
+        const sounds = {
+          jump: "https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_jump.wav",
+          pipe: "https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_pipe.wav",
+          shell: "https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_shell.wav",
+          fireball: "https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_fireball.wav",
+          yoshi: "https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_yoshi.wav",
+          hammer: "https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_mario_hammer.wav",
+          starflower: "https://www.superluigibros.com/downloads/sounds/SNES/SMRPG/wav/smrpg_starflower.wav",
+          box: "https://www.superluigibros.com/downloads/sounds/NES/SMB3/wav/48.wav",
+          coin: "https://www.superluigibros.com/downloads/sounds/NES/SMB3/wav/54.wav",
+          mushroom: "https://www.superluigibros.com/downloads/sounds/NES/SMB3/wav/49.wav",
+          sherbetLand: "http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/20-sherbet-land-final-lap-.mp3",
+          DKMountain: "http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/21-dk-mountain-dino-dino-jungle.mp3",
+          rainbowRoad: "http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/25-rainbow-road.mp3",
+          peachBeach: "http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/09-peach-beach-daisy-cruiser.mp3",
+          waluigiStadium: "http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/17-waluigi-stadium-wario-colosseum.mp3",
+          bowsersCastle: "http://www.superluigibros.com/downloads/sounds/GAMECUBE/MKDD/soundtrack/23-bowser-s-castle.mp3",
+        }
 
-      function playJump() {
-        const jump = document.getElementById("marioJump");
-        jump.play();
+        function play(name) {
+          const url = sounds[name]
+          const audio = new Audio()
+          audio.src = url
+          audio.play()
+        }
+      </script>
 
-      }
-
-      function playPipe() {
-        const pipe = document.getElementById("marioPipe");
-        pipe.play();
-
-      }
-
-      function playShell() {
-        const shell = document.getElementById("marioShell");
-        shell.play();
-      }
-
-      function playFireball() {
-        const fireball = document.getElementById("marioFireball");
-        fireball.play();
-      }
-
-      function playYoshi() {
-        const yoshi = document.getElementById("yoshi");
-        yoshi.play();
-      }
-
-      function playHammer() {
-        const hammer = document.getElementById("hammer");
-        hammer.play();
-      }
-
-      function playStar() {
-        const star = document.getElementById("star");
-        star.play();
-      }
-
-      function playPowerUp() {
-        const powerUp = document.getElementById("powerUp");
-        powerUp.play();
-      }
-
-      function playCoin() {
-        const coin = document.getElementById("coin");
-        coin.play();
-      }
-
-      function playBigMushroom() {
-        const bigMushroom = document.getElementById("bigMushroom");
-        bigMushroom.play();
-      }
-    </script>
-
-  </body>
+    </body>
 
 </html>
